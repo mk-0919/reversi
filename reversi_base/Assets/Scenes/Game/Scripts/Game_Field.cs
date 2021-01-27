@@ -163,7 +163,7 @@ public class Game_Field : UIBehaviour
                 Turncheck(cell, stoneColor, 1, -1) ||
                 Turncheck(cell, stoneColor, 1, 0) ||
                 Turncheck(cell, stoneColor, 1, 1)
-                ;
+                 ;
         }
         else
         {
@@ -185,7 +185,7 @@ public class Game_Field : UIBehaviour
         {
             //各座標をそれぞれのDirectionずつずらす
             x = x + xDirection;
-            y = y * yDirection;
+            y = y + yDirection;
             //(x,y)座標のcellを取得
             Game_Cell targetCell = GetCell(x, y);
             //targetCellがnullまたは、色が無い場合、false
